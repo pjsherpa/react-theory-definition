@@ -31,7 +31,9 @@ function App() {
           declare a state variable and a function that can update the state
           variable.
           <li>What is useEffect?</li>-useEffect is a built in react hook, it
-          allows us to run sideeffects in our components.
+          allows us to run sideeffects in our components. useEffect takes two
+          arguments a function that performs the side effect and an array of
+          dependencies that tell us when the effect should be re-run.
         </ol>
       </div>
     </div>
