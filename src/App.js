@@ -47,6 +47,15 @@ function App() {
           arguments a function that performs the side effect and an array of
           dependencies that tell us when the effect should be re-run.
           <Counter />
+          <li>useEffect:</li>
+          There are two arguments that are passed in useEffect. 1.A setup
+          function with setup codes that connects to the system. -This has a
+          cleanup function with cleanup codes that disconnects from the system.
+          2. A list of dependencies including every value from your components
+          used inside those functions. eg: [ count ]. The effect will only run
+          if count has been changed since the last render. if the list of
+          dependencies is empty the effect will only run once when the component
+          is mounted and not again until the component is unmounted.
         </ol>
       </div>
     </div>
