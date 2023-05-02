@@ -1,10 +1,22 @@
 import "./App.css";
+import React, { useState, useEffect } from "react";
+import Counter from "./component/Counter";
 
 function App() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => setTime(() => new Date()), 1000);
+    return () => clearInterval(interval);
+  });
+
   return (
     <div className="App">
       <div className="App-header">
-        <header>React theory</header>
+        <h2>{time.toLocaleTimeString()}</h2>
+        <header>
+          <h1>React theory</h1>
+        </header>
         <ol>
           <li>What is a component in react?</li>- A component is a small and
           reusable piece of code that represents a part of the user
@@ -34,6 +46,7 @@ function App() {
           allows us to run sideeffects in our components. useEffect takes two
           arguments a function that performs the side effect and an array of
           dependencies that tell us when the effect should be re-run.
+          <Counter />
         </ol>
       </div>
     </div>
