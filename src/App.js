@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Counter from "./component/Counter";
+import CallApi from "./component/CallApi";
 
 function App() {
   const [time, setTime] = useState(new Date());
@@ -55,7 +56,9 @@ function App() {
           used inside those functions. eg: [ count ]. The effect will only run
           if count has been changed since the last render. if the list of
           dependencies is empty the effect will only run once when the component
-          is mounted and not again until the component is unmounted.
+          is mounted and not again until the component is unmounted. useEffect
+          example for calling api.
+          {/* <CallApi /> */}
         </ol>
       </div>
     </div>
