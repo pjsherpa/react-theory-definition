@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Counter from "./component/Counter";
-import CallApi from "./component/CallApi";
 
 function App() {
   const [time, setTime] = useState(new Date());
