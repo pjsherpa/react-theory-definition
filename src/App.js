@@ -59,6 +59,8 @@ function App() {
           is mounted and not again until the component is unmounted. useEffect
           example for calling api.
           {/* <CallApi /> */}
+          <li>Calling an API using useEffect:</li>
+          })
         </ol>
       </div>
     </div>
