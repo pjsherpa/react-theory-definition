@@ -17,7 +17,7 @@ function App() {
             {components.map((Page, index) => (
               <Route
                 key={index}
-                path={`/${Page.name.toLowerCase()}`}
+                path={`/${Page.toLowerCase()}`}
                 element={<Page />}
               />
             ))}

@@ -9,7 +9,7 @@ const NavBar = () => {
         Qa
       </Link>
       {querySelector.map((query) => (
-        <Link style={{ margin: "10px" }} to={`/${query}`}>
+        <Link style={{ margin: "10px" }} to={`/${query.toLowerCase()}`}>
           {query}
         </Link>
       ))}
