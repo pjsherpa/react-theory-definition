@@ -2,22 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const querySelector = ["Counter", "CallApi"];
   return (
     <nav>
-      <ul>
-        <li>
-          <Link to="/">Qa</Link>
-        </li>
-        <li>
-          <Link to="/callapi">callapi</Link>
-        </li>
-        <li>
-          <Link to="/counter">counter</Link>
-        </li>
-        <li>
-          <Link to="/callapi">callapi</Link>
-        </li>
-      </ul>
+      <Link style={{ margin: "10px" }} to="/">
+        Qa
+      </Link>
+      {querySelector.map((query) => (
+        <Link style={{ margin: "10px" }} to={`/${query}`}>
+          {query}
+        </Link>
+      ))}
     </nav>
   );
 };
