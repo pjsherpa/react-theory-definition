@@ -4,9 +4,10 @@ import NavBar from "./component/NavBar";
 import Qa from "./component/Qa";
 import Counter from "./component/Counter";
 import CallApi from "./component/CallApi";
+import CheckList from "./component/CheckList";
 
 function App() {
-  const components = [Counter, CallApi];
+  const components = [Counter, CallApi, CheckList];
   return (
     <div className="App">
       <Router>
@@ -17,7 +18,7 @@ function App() {
             {components.map((Page, index) => (
               <Route
                 key={index}
-                path={`/${Page.toLowerCase()}`}
+                path={`/${Page.name.toLowerCase()}`}
                 element={<Page />}
               />
             ))}

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  const querySelector = ["Counter", "CallApi"];
+  const querySelector = ["Counter", "CallApi", "CheckList"];
   return (
     <nav>
       <Link style={{ margin: "10px" }} to="/">
