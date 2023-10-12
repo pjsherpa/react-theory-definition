@@ -5,9 +5,9 @@ import Qa from "./component/Qa";
 import Counter from "./component/Counter";
 import CallApi from "./component/CallApi";
 import CheckList from "./component/CheckList";
-
+import LeaderBoard from "./component/LeaderBoard";
 function App() {
-  const components = [Counter, CallApi, CheckList];
+  const components = [Counter, CallApi, CheckList, LeaderBoard];
   return (
     <div className="App">
       <Router>
